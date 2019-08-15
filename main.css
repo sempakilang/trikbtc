@@ -1,0 +1,123 @@
+  @-webkit-keyframes blink {
+    0%   { background-color: #fff; }
+    49% { background-color: #fff; }
+    50% { background-color: #defdcf; }
+    99% { background-color: #defdcf; }
+    100% { background-color: #fff; }
+  }
+  @-moz-keyframes blink {
+    0%   { background-color: #fff; }
+    49% { background-color: #fff; }
+    50% { background-color: #defdcf; }
+    99% { background-color: #defdcf; }
+    100% { background-color: #fff; }
+  }
+  @keyframes blink {
+    0%   { background-color: #fff; }
+    49% { background-color: #fff; }
+    50% { background-color: #defdcf; }
+    99% { background-color: #defdcf; }
+    100% { background-color: #fff; }
+  }
+  @-webkit-keyframes blink-super {
+    0%   { background-color: #fff; }
+    49% { background-color: #fff; }
+    50% { background-color: #b1ff8c; }
+    99% { background-color: #b1ff8c; }
+    100% { background-color: #fff; }
+  }
+  @-moz-keyframes blink-super {
+    0%   { background-color: #fff; }
+    49% { background-color: #fff; }
+    50% { background-color: #b1ff8c; }
+    99% { background-color: #b1ff8c; }
+    100% { background-color: #fff; }
+  }
+  @keyframes blink-super {
+    0%   { background-color: #fff; }
+    49% { background-color: #fff; }
+    50% { background-color: #b1ff8c; }
+    99% { background-color: #b1ff8c; }
+    100% { background-color: #fff; }
+  }
+  @-webkit-keyframes super-sekali {
+    0%   { background-color: #fff; }
+    49% { background-color: #fff; }
+    50% { background-color: #ce55ff; }
+    99% { background-color: #ce55ff; }
+    100% { background-color: #fff; }
+  }
+  @-moz-keyframes super-sekali {
+    0%   { background-color: #fff; }
+    49% { background-color: #fff; }
+    50% { background-color: #ce55ff; }
+    99% { background-color: #ce55ff; }
+    100% { background-color: #fff; }
+  }
+  @keyframes super-sekali {
+    0%   { background-color: #fff; }
+    49% { background-color: #fff; }
+    50% { background-color: #ce55ff; }
+    99% { background-color: #ce55ff; }
+    100% { background-color: #fff; }
+  }
+  .positif {
+    -webkit-animation: blink 1s infinite;
+    -moz-animation:    blink 1s infinite;
+    animation:         blink 1s infinite;
+  }
+  .super {
+    -webkit-animation: blink-super 1s infinite;
+    -moz-animation:    blink-super 1s infinite;
+    animation:         blink-super 1s infinite;
+  }
+  .super-sekali {
+    -webkit-animation: super-sekali 1s infinite;
+    -moz-animation:    super-sekali 1s infinite;
+    animation:         super-sekali 1s infinite;
+  }
+
+
+  td.details-control {
+      background: url('https://datatables.net/examples/resources/details_open.png') no-repeat center center;
+      cursor: pointer;
+  }
+  tr.shown td.details-control {
+      background: url('https://datatables.net/examples/resources/details_close.png') no-repeat center center;
+  }
+
+
+  .child-table tbody tr:nth-of-type(odd) {
+      background: #d0d0d0;
+  }
+  .child-table tbody tr:nth-of-type(even) {
+      background: #e0e0e0;
+  }
+  .child-table thead tr{
+    background-color: rgb(128, 128, 128)!important;
+    color:#ececec;
+  }
+  .child-table thead tr th{
+    font-weight: 500;
+    border-color: #d0d0d0;
+  }
+  .child-table .stock {
+      color: #7d7a7a;
+  }
+  .child-table tr:hover td div.tipe-b {
+      color: #FF9800;
+  }
+  .child-table tr:hover td div.tipe-a {
+      color: blue;
+  }
+
+@media screen and (max-width: 600px) {
+
+  .child-table tr td div.tipe-b {
+      color: #FF9800;
+  }
+  .child-table tr td div.tipe-a {
+      color: blue;
+  } 
+
+}
